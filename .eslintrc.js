@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "node": true    
     },
     "extends": [
         "eslint:recommended",
@@ -13,8 +14,11 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint"
+        "@typescript-eslint",'prettier'
     ],
     "rules": {
+        "no-console":0, //Means No Issue
+        //"no-console":1 //Mean error
+        "prettier/prettier":2 //mean error
     }
 }

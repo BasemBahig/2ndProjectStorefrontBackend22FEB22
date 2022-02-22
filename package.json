@@ -1,18 +1,18 @@
 {
-  "name": "2ndProject-StorefrontBackend22FEB22",
+  "name": "2ndProjectStorefrontBackend22FEB22",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/BasemBahig/2ndProject-StorefrontBackend22FEB22.git",
+  "repository": "https://github.com/BasemBahig/2ndProjectStorefrontBackend22FEB22.git",
   "author": "Basem Hennawi <basembahig@gmail.com>",
   "license": "MIT",
   "scripts": {
     "start": "nodemon --watch './**/*.ts' --exec ts-node ./src/index.ts",
     "build": "npx tsc",
     "start:prod": "npm run build && node dist/index.js",
-    "prettier": "prettier --config .prettierrc \"src/**/*.ts\" --write",
+    "prettier": "prettier --config .prettierrc \"src/**/*.js\" --write",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write src/**/*.ts",
+    "format": "prettier --write ./src/**/*.ts",
     "jasmine": "jasmine",
     "test": "npm run build && npm run jasmine"
   },
@@ -21,6 +21,7 @@
     "@types/jasmine": "^3.10.3",
     "@types/morgan": "^1.9.3",
     "@types/node": "^17.0.19",
+    "@types/supertest": "^2.0.11",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
     "eslint": "^8.9.0",
@@ -28,6 +29,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^2.0.15",
     "prettier": "2.5.1",
+    "supertest": "^6.2.2",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
   },
