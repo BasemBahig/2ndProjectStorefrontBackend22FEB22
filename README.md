@@ -58,3 +58,13 @@ import { DisplayProcessor, SpecReporter, StacktraceOption } from 'jasmine-spec-r
 class CustomProcessor extends DisplayProcessor { public displayJasmineStarted(info: SuiteInfo, log: string): string { return TypeScript ${log} } }
 
 jasmine.getEnv().clearReporters() jasmine.getEnv().addReporter( new SpecReporter({ spec: { displayStacktrace: StacktraceOption.NONE, }, customProcessors: [CustomProcessor], }) )
+
+# Start deal with Postgress
+yarn add pg
+Make sure yarn add tsc
+Make sure add
+yarn add tsc-watch
+npm install tsc-watch --save-dev
+
+npm install tsc --save-dev
+Yarn add dotenv
